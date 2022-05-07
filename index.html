@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <form id="passForm">
+        <fieldset>
+            <legend>Password Generator</legend>
+            <label for="service">Service</label>
+            <input type="text" id="service">
+            <label for="length">Password Length</label>
+            <input type="number" value="10" min="8" step="1" id="length">
+            <label for="case">Letters</label>
+            <select name="case" id="case">
+                <option value="all">All</option>
+                <option value="upper">Uppercase</option>
+                <option value="lower">Lowercase</option>
+                <option value="none">None</option>
+            </select>
+            <label for="number">Numbers</label>
+            <input type="checkbox" checked="true" id="number" name="number">
+            <label for="symbols">Symbols</label>
+            <input type="checkbox" checked="true" id="symbols" name="symbols">
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <h1 id="example"></h1>
+
+    <script src="./generate.js"></script>
+</body>
+</html>
